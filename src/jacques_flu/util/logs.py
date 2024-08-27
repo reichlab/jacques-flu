@@ -2,11 +2,11 @@ import sys
 
 import structlog
 
-import reichlab_python_template
+import jacques_flu
 
 
 def add_custom_info(logger, method_name, event_dict):
-    event_dict["version"] = reichlab_python_template.__version__
+    event_dict["version"] = jacques_flu.__version__
     return event_dict
 
 

@@ -14,7 +14,7 @@ pip install git+[GITHUB LINK TO YOUR REPO]
 
 To run it:
 ```bash
-reichlab_python_template
+jacques_flu
 ```
 
 ## Setup for local development

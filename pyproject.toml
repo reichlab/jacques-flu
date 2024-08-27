@@ -40,7 +40,7 @@ dev = [
 ]
 
 [project.entry-points."console_scripts"]
-reichlab_python_template = "jacques_flu.app:main"
+jacques_flu = "jacques_flu.app:main"
 
 [build-system]
 # Minimum requirements for the build system to execute.

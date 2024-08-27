@@ -1,7 +1,7 @@
 import structlog
 
-from reichlab_python_template.util.date import get_current_date
-from reichlab_python_template.util.logs import setup_logging
+from jacques_flu.util.date import get_current_date
+from jacques_flu.util.logs import setup_logging
 
 setup_logging()
 logger = structlog.get_logger()
@@ -18,5 +18,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
