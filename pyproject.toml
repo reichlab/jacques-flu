@@ -1,6 +1,6 @@
 [project]
-name = "reichlab-python-template"
-description = "Python template for Reich Lab projects"
+name = "jacques_flu"
+description = "Using jacques to analyze flu data"
 license = {text = "MIT License"}
 readme = "README.md"
 requires-python = '>=3.10'
@@ -13,7 +13,19 @@ dynamic = ["version"]
 dependencies = [
     "structlog",
     "rich",
-    "toml"
+    "toml",
+    "pandas>=2.2.2",
+    "numpy>=1.26.1",
+    "tensorflow>=2.16.1,<3",
+    "tensorflow-probability==0.24.0",
+    "tf-keras>=2.16,<3",
+    "matplotlib >=3.5.1,<4",
+    "pymmwr",
+    "polars",
+    "pyarrow",
+    "timeseriesutils @ git+https://github.com/reichlab/timeseriesutils",
+    "jacques @ git+https://github.com/reichlab/jacques#egg=BWRedits", # referencing my branch for local work
+    'data-pipeline @ git+https://github.com/reichlab/flusion.git#subdirectory=code/data-pipeline',
 ]
 
 [project.optional-dependencies]
@@ -28,18 +40,18 @@ dev = [
 ]
 
 [project.entry-points."console_scripts"]
-reichlab_python_template = "reichlab_python_template.app:main"
+reichlab_python_template = "jacques_flu.app:main"
 
 [build-system]
 # Minimum requirements for the build system to execute.
 requires = ["setuptools", "wheel"]
 
 [tools.setuptools]
-packages = ["reichlab_python_template"]
+packages = ["jacques_flu"]
 
-[tool.reichlab_python_template]
+[tool.jacques_flu]
 # to write json-formatted logs to disk, uncomment the following line specify the file location
-# log_file = "/path/to/log/files/rechlab_python_template.log"
+# log_file = "/path/to/log/files/jacques_flu.log"
 
 [tool.ruff]
 line-length = 120
@@ -52,4 +64,4 @@ inline-quotes = "double"
 quote-style = "double"
 
 [tool.setuptools.dynamic]
-version = {attr = "reichlab_python_template.__version__"}
+version = {attr = "jacques_flu.__version__"}

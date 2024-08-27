@@ -1,29 +1,8 @@
-# reichlab-python-template
+# jacques_flu
 
-[REPLACE WITH A DESCRIPTION OF YOUR PROJECT]
+This project is an application of the just another conditional quantile estimator (Jacques) method to predict flu data.
 
-A Python template for Reich Lab projects.
-
-This repo contains a Python package with minimal functionality. It serves as a starting point for new projects (it can be selected as the template when creating a new repo in the Reich Lab org).
-
-There as some opinionated choices here (explained below) which people should override as needed. The main goal is to have a consistent starting point to get up and running with a new Python code base.
-
-## Getting started
-
-[REMOVE THIS SECTION AFTER FOLLOWING THE INSTRUCTIONS BELOW]
-
-If you're using this repo as a template for a new project, make the following changes:
-
-1. Rename the `reichlab_python_template` directory (under `src`) to the name of your package (no hyphens!).
-
-2. Replace all instances of `reichlab-python-template` with the name of your repo/project.
-
-3. Replace all instances of `reichlab_python_template` with the name of your package (remember that Python module names cannot contain hyphens).
-
-4. Update [`pyproject.toml`](pyproject.toml). This file is required and will describe several aspects of your project. `pyproject.toml` replaces `setup.py` and is described in detail on [Python's packaging website](https://packaging.python.org/en/latest/guides/writing-pyproject-toml/).
-
-5. Follow the _Setup for local development_ instructions below to ensure that everything works as expected.
-
+#NOTE: In order to run this package, you will have to copy the data-raw folder from https://github.com/reichlab/flusion into the src/jacques_flu directory.
 
 ## Installing and running the package (no development)
 
