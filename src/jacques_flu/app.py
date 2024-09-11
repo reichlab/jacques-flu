@@ -3,6 +3,8 @@ import structlog
 from jacques_flu.util.date import get_current_date
 from jacques_flu.util.logs import setup_logging
 
+#innocuous comment
+
 setup_logging()
 logger = structlog.get_logger()
 
