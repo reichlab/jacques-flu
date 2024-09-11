@@ -158,7 +158,7 @@ termcolor==2.4.0
     # via tensorflow
 tf-keras==2.17.0
     # via jacques-flu (pyproject.toml)
-timeseriesutils @ git+https://github.com/reichlab/timeseriesutils@d25f33db30a8d5252329269ec9d205984f980f6c
+timeseriesutils @ git+https://github.com/reichlab/timeseriesutils
     # via jacques-flu (pyproject.toml)
 toml==0.10.2
     # via jacques-flu (pyproject.toml)
