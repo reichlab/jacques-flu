@@ -11,11 +11,12 @@ classifiers = [
 dynamic = ["version"]
 
 dependencies = [
+    "scipy",
     "structlog",
     "rich",
     "toml",
-    "pandas>=2.2.2",
-    "numpy>=1.26.1",
+    "pandas>=1.3.0",
+    "numpy>=1.26",
     "tensorflow>=2.16.1,<3",
     "tensorflow-probability==0.24.0",
     "tf-keras>=2.16,<3",
@@ -23,9 +24,9 @@ dependencies = [
     "pymmwr",
     "polars",
     "pyarrow",
-    "timeseriesutils @ git+https://github.com/reichlab/timeseriesutils",
-    "jacques @ git+https://github.com/reichlab/jacques#egg=BWRedits", # referencing my branch for local work
-    'data-pipeline @ git+https://github.com/reichlab/flusion.git#subdirectory=code/data-pipeline',
+    "timeseriesutils@git+https://github.com/reichlab/timeseriesutils/",
+    "jacques@git+https://github.com/reichlab/jacques#egg=BWRedits", # referencing my branch for local work
+   # 'data-pipeline@git+https://github.com/reichlab/flusion.git#subdirectory=code/data-pipeline',
 ]
 
 [project.optional-dependencies]
