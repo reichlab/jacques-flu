@@ -57,7 +57,7 @@ features:
 	$(PYTHON_INTERPRETER) jacques_flu/features.py
 
 
-## Featurize Data
+## Splits data up into training and testing data
 .PHONY: traintest
 traintest:
 	$(PYTHON_INTERPRETER) jacques_flu/train_test_split.py
