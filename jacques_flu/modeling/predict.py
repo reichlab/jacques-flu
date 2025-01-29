@@ -4,7 +4,7 @@ import typer
 from loguru import logger
 from tqdm import tqdm
 
-from jacques_manuscript.config import MODELS_DIR, PROCESSED_DATA_DIR
+from jacques_flu.config import MODELS_DIR, PROCESSED_DATA_DIR
 
 app = typer.Typer()
 

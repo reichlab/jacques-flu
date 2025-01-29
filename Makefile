@@ -50,6 +50,10 @@ format:
 data:
 	$(PYTHON_INTERPRETER) jacques_flu/dataset.py
 
+.PHONY: hhs
+hhs:
+	$(PYTHON_INTERPRETER) jacques_flu/hhs_data.py
+
 
 ## Featurize Data
 .PHONY: features
@@ -61,6 +65,12 @@ features:
 .PHONY: traintest
 traintest:
 	$(PYTHON_INTERPRETER) jacques_flu/train_test_split.py
+
+
+## Splits data up into training and testing data
+.PHONY: train
+train:
+	$(PYTHON_INTERPRETER) jacques_flu/modeling/train.py
 
 
 #################################################################################
