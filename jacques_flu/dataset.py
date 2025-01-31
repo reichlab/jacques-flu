@@ -2,6 +2,7 @@ from pathlib import Path
 import typer
 from data_pipeline.loader import FluDataLoader
 
+
 from jacques_flu.config import PROCESSED_DATA_DIR, RAW_DATA_DIR
 
 app = typer.Typer()
